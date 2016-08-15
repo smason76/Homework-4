@@ -37,8 +37,10 @@ $(document).ready(function () {
 });
 //combined read more / read less link
 function toggleReadMore(){
-    $('#show-this-on-click').toggle();
-        //                alert('Hello');
+    $('#show-this-on-click').slideToggle(function(){
         $('.readmore').toggle();
         $('.readless').toggle();
+    });
+        //                alert('Hello');
+        
     };
